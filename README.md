@@ -1,2 +1,3 @@
-# Projekt---t-pl-lkoz-si-s-letm-d-tan-csad-
+#Projekt---taplalkozasi-es-eletmod-tanacsado
+
 sziasztok ez egy nagyon meno feladat
