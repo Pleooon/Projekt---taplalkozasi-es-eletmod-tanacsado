@@ -1,0 +1,93 @@
+body{
+margin:0;
+background:#1e1e1e;
+}
+
+
+header{
+background:#FFF1A8;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+}
+
+.logo{
+width:60px;
+height:30px;
+border:2px solid gray;
+}
+
+nav{
+display:flex;
+gap:20px;
+}
+
+.menu{
+width:120px;
+height:30px;
+border:2px solid gray;
+}
+
+
+main{
+background:#EAD7C5;
+padding:40px;
+}
+
+.top{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+margin-bottom:40px;
+}
+
+.left{
+height:200px;
+border:2px solid gray;
+}
+
+.right{
+height:150px;
+border:2px solid gray;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+gap:30px;
+}
+
+.card{
+width:120px;
+height:120px;
+border:2px solid gray;
+}
+
+footer{
+background:#FFF1A8;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+}
+
+.footer-left div{
+width:120px;
+height:10px;
+border:2px solid gray;
+margin:5px 0;
+}
+
+.footer-center{
+width:300px;
+height:20px;
+border:2px solid gray;
+}
+
+.footer-right div{
+width:120px;
+height:20px;
+border:2px solid gray;
+margin:5px 0;
+}
