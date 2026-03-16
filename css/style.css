@@ -1,0 +1,36 @@
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+}
+
+/* HEADER */
+.header{
+    background:#FFF1A8;
+    padding:15px 40px;
+}
+
+/* BAL OLDALI TARTALOM */
+.header-left{
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+
+/* LOGO */
+.logo{
+    font-size:24px;
+    font-weight:bold;
+}
+
+/* MENU */
+.nav a{
+    text-decoration:none;
+    color:#333;
+    margin-right:20px;
+    font-weight:bold;
+}
+
+.nav a:hover{
+    text-decoration:underline;
+}
