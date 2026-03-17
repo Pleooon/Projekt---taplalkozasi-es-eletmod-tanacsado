@@ -1,60 +1,91 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-  <meta charset="UTF-8">
-  <title>A béke szigete</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A béke szigete</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header class="header">
-  <div class="logo">
-    <img src="img/oldallogo.png" alt="logo">
-  </div>
+    <header class="sziget-fejlec container-fluid border-bottom border-dark">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-3">
+                    <img src="img/oldallogo.png" class="sziget-mini-logo" alt="Logo">
+                </div>
+                <div class="col-6 text-center">
+                    <a href="index.html" class="sziget-fo-link">A béke szigete</a>
+                </div>
+                <div class="col-3 d-flex justify-content-end gap-3">
+                    <a href="#" class="sziget-nav-item">Rolunk</a>
+                    <a href="#" class="sziget-nav-item">Ajánlataink</a>
+                    <a href="#" class="sziget-nav-item">Vásárolj most!</a>
+                </div>
+            </div>
+        </div>
+    </header>
 
-  <nav class="nav">
-    <a href="#">A béke szigete</a>
-    <a href="#">Rólunk</a>
-    <a href="#">Ajánlataink</a>
-    <a href="#">Vásárolj most!</a>
-  </nav>
-</header>
+    <main class="container py-5 flex-grow-1">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="sziget-profil-keret border border-dark p-2">
+                   <img src="img/Gitaron.png" class="img-fluid" alt="Git Áron">
+                </div>
+                <div class="sziget-profil-nev border border-dark border-top-0 py-3 text-center">
+                    Git Áron
+                </div>
+            </div>
+            <div class="col-md-8">
+                <h2 class="sziget-idezet mb-5">Ne a kifogásokat keresd — csináld meg. Egy ismétlés még belefér</h2>
+                <div class="d-flex gap-4">
+                    <div class="sziget-kartya"></div>
+                    <div class="sziget-kartya"></div>
+                    <div class="sziget-kartya"></div>
+                </div>
+            </div>
+        </div>
+    </main>
 
-<main class="main">
-
-  <div class="left">
-    <img src="img/aron.jpg" alt="Áron">
-    <p class="name">Git Áron</p>
-  </div>
-
-  <div class="right">
-    <h2>Ne a kifogásokat keresd — csináld meg. Egy ismétlés még belefér</h2>
-
-    <div class="cards">
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
+    <footer class="sziget-lablec container-fluid border-top border-dark">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <p class="m-1">📧 bekeszigete@gmail.com</p>
+                    <p class="m-1">📍 bekegym ( jozsef attila u 34)</p>
+                    <p class="m-1">📞 +36 20 432 6007</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <span class="sziget-jogok">Minden jog fenntartva @2026</span>
+                </div>
+                <div class="col-md-4">
+                    <form class="d-flex flex-column gap-2">
+                        <input type="email" class="form-control form-control-sm sziget-input" placeholder="ide írd le az email címed!">
+                        <textarea class="form-control form-control-sm sziget-input" placeholder="ide írd az üzeneted!"></textarea>
+                        <button type="submit" class="sziget-gomb py-2">KÜLDÉS</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
     </div>
   </div>
-
-</main>
-
-<footer class="footer">
-  <div class="left-footer">
-    <p>bekesziget@gmail.com</p>
-    <p>bekegy (középső ajtó 34)</p>
-    <p>+36 20 432 6007</p>
-  </div>
-
-  <div class="center-footer">
-    Minden jog fenntartva ©2026
-  </div>
-
-  <div class="right-footer">
-    <input type="text" placeholder="Írd ide az email címed!">
-    <button>Küldés</button>
-  </div>
-</footer>
+</div>
 
 </body>
 </html>
