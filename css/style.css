@@ -4,38 +4,26 @@ body{
     font-family:Arial, sans-serif;
 }
 
-<<<<<<< HEAD
-=======
 /* HEADER */
->>>>>>> efe403d478bb80e9daf239fc334903e53c37dc37
 .header{
     background:#FFF1A8;
     padding:15px 40px;
 }
 
-<<<<<<< HEAD
-=======
 /* BAL OLDALI TARTALOM */
->>>>>>> efe403d478bb80e9daf239fc334903e53c37dc37
 .header-left{
     display:flex;
     align-items:center;
     gap:30px;
 }
 
-<<<<<<< HEAD
-=======
 /* LOGO */
->>>>>>> efe403d478bb80e9daf239fc334903e53c37dc37
 .logo{
     font-size:24px;
     font-weight:bold;
 }
 
-<<<<<<< HEAD
-=======
 /* MENU */
->>>>>>> efe403d478bb80e9daf239fc334903e53c37dc37
 .nav a{
     text-decoration:none;
     color:#333;
@@ -46,7 +34,6 @@ body{
 .nav a:hover{
     text-decoration:underline;
 }
-<<<<<<< HEAD
 body{
     margin:0;
     font-family:Arial, sans-serif;
@@ -131,5 +118,3 @@ nav a:hover { color: #2d6a4f; }
 
 footer { background: #2d6a4f; color: white; text-align: center; padding: 60px 10%; }
 footer a { color: #b7e4c7; text-decoration: none; }
-=======
->>>>>>> efe403d478bb80e9daf239fc334903e53c37dc37
