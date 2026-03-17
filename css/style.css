@@ -7,21 +7,12 @@
 
 body {
   background: #111;
-  color: #000;
-}
-
-.container {
-  width: 1100px;
-  margin: 0 auto;
 }
 
 /* HEADER */
 .header {
   background: #FFF1A8;
-  padding: 15px 0;
-}
-
-.header-content {
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,9 +23,9 @@ body {
 }
 
 .nav a {
-  margin-left: 30px;
+  margin-left: 20px;
   text-decoration: none;
-  color: #000;
+  color: black;
   font-weight: bold;
 }
 
@@ -51,7 +42,7 @@ body {
 }
 
 .left img {
-  width: 250px;
+  width: 220px;
 }
 
 .name {
@@ -66,7 +57,7 @@ body {
 }
 
 .right h2 {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .cards {
@@ -77,7 +68,7 @@ body {
 .card {
   width: 120px;
   height: 120px;
-  border: 2px solid #999;
+  border: 2px solid #888;
   position: relative;
 }
 
@@ -88,9 +79,8 @@ body {
   position: absolute;
   width: 100%;
   height: 2px;
-  background: #999;
+  background: #888;
   top: 50%;
-  left: 0;
 }
 
 .card::before {
@@ -104,51 +94,18 @@ body {
 /* FOOTER */
 .footer {
   background: #FFF1A8;
-  padding: 20px 0;
-}
-
-.footer-content {
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.newsletter input {
+.right-footer input {
   padding: 5px;
 }
-body{
-    margin:0;
-    font-family:Arial, sans-serif;
-}
 
-
-.header{
-    background:#FFF1A8;
-    padding:15px 40px;
-}
-
-.header-left{
-    display:flex;
-    align-items:center;
-    gap:30px;
-}
-
-
-.logo{
-    font-size:24px;
-    font-weight:bold;
-}
-
-
-.nav a{
-    text-decoration:none;
-    color:#333;
-    margin-right:20px;
-    font-weight:bold;
-}
-
-.nav a:hover{
-    text-decoration:underline;
+.right-footer button {
+  padding: 5px 10px;
 }
 
 
