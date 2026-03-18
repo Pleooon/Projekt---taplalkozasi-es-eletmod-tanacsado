@@ -4,31 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git Áron | Táplálkozási és Életmód Tanácsadó</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
-
-    <nav>
-        <div class="logo">A béke <span>Szigete</span></div>
-        <ul>
-            <li><a href="index.html">Kezdőlap</a></li>
-            <li><a href="rolunk.html">Rólunk</a></li>
-            <li><a href="ajanlat.html">Ajánlataink</a></li>
-            <li><a href="webshop.html">Vásárolj most!</a></li>
-        </ul>
-    </nav>
+   
 
     
 
-    <header id="home" class="hero">
-        <div class="hero-text">
-            <h1>Az egészség nem cél, hanem <span>életmód.</span></h1>
-            <p>Git Áron vagyok, okleveles táplálkozási tanácsadó. Segítek megtalálni az egyensúlyt a test és a lélek között.</p>
-            <a href="#contact" class="cta-button">Vágjunk bele!</a>
+ <header class="sziget-fejlec container-fluid border-bottom border-dark">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-3">
+                    <img src="img/oldallogo.png" class="sziget-mini-logo" alt="Logo">
+                </div>
+                <div class="col-6 text-center">
+                    <a href="index.html" class="sziget-fo-link">A béke szigete</a>
+                </div>
+                <div class="col-3 d-flex justify-content-end gap-3">
+                    <a href="rolunk.html" class="sziget-nav-item">Rolunk</a>
+                    <a href="ajanlat.html" class="sziget-nav-item">Ajánlataink</a>
+                    <a href="" class="sziget-nav-item">Vásárolj most!</a>
+                </div>
+            </div>
         </div>
+        
     </header>
+
 
     <section id="philosophy" class="section">
         <div class="container">
@@ -68,27 +71,38 @@
             </div>
         </div>
     </section>
- <footer class="sziget-lablec container-fluid border-top border-dark">
-        <div class="container py-4">
-            <div class="row align-items-center">
-                <div class="col-md-4">
-                    <p class="m-1">📧 bekeszigete@gmail.com</p>
-                    <p class="m-1">📍 bekegym ( jozsef attila u 34)</p>
-                    <p class="m-1">📞 +36 20 432 6007</p>
-                </div>
-                <div class="col-md-4 text-center">
-                    <span class="sziget-jogok">Minden jog fenntartva @2026</span>
-                </div>
-                <div class="col-md-4">
-                    <form class="d-flex flex-column gap-2">
-                        <input type="email" class="form-control form-control-sm sziget-input" placeholder="ide írd le az email címed!">
-                        <textarea class="form-control form-control-sm sziget-input" placeholder="ide írd az üzeneted!"></textarea>
-                        <button type="submit" class="sziget-gomb py-2">KÜLDÉS</button>
-                    </form>
-                </div>
+<footer class="sziget-lablec">
+    <div class="container py-5">
+        <div class="row text-center text-md-start align-items-start gy-4">
+
+            <!-- Kapcsolat -->
+            <div class="col-md-4">
+                <h5 class="mb-3">Kapcsolat</h5>
+                <p>📧 bekeszigete@gmail.com</p>
+                <p>📍 Bekegym, József Attila u. 34</p>
+                <p>📞 +36 20 432 6007</p>
             </div>
+
+            <!-- Közép -->
+            <div class="col-md-4 text-center">
+                <h4 class="mb-3">A béke szigete</h4>
+                <p>Táplálkozási és életmód tanácsadás</p>
+                <span class="sziget-jogok">© 2026 Minden jog fenntartva</span>
+            </div>
+
+            <!-- Üzenet -->
+            <div class="col-md-4">
+                <h5 class="mb-3">Írj nekem</h5>
+                <form class="d-flex flex-column gap-2">
+                    <input type="email" class="form-control sziget-input" placeholder="Email címed">
+                    <textarea class="form-control sziget-input" rows="3" placeholder="Üzeneted"></textarea>
+                    <button type="submit" class="sziget-gomb">Küldés</button>
+                </form>
+            </div>
+
         </div>
-    </footer>
+    </div>
+</footer>
 
 </body>
 </html>
