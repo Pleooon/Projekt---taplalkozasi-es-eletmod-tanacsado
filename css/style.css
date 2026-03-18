@@ -1,74 +1,86 @@
-
-body{
-    margin:0;
-    font-family:Arial, sans-serif;
+/* ALAP BEÁLLÍTÁSOK */
+body {
+    background-color: #EAD7C5 !important; /* Barack háttér */
+    color: #000000 !important;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-/* HEADER */
-.header{
-    background:#FFF1A8;
-    padding:15px 40px;
+/* Minden szöveg legyen fekete */
+p, span, div, a, h2, button, input, textarea {
+    color: #000000 !important;
 }
 
-/* BAL OLDALI TARTALOM */
-.header-left{
-    display:flex;
-    align-items:center;
-    gap:30px;
+/* FEJLÉC ÉS LÁBLÉC SÁRGA HÁTTERE */
+.sziget-fejlec, .sziget-lablec {
+    background-color: #FFF1A8 !important; /* Sárga háttér */
 }
 
-/* LOGO */
-.logo{
-    font-size:24px;
-    font-weight:bold;
+/* FEJLÉC ELEMEK */
+.sziget-fejlec {
+    height: 100px;
 }
 
-/* MENU */
-.nav a{
-    text-decoration:none;
-    color:#333;
-    margin-right:20px;
-    font-weight:bold;
+.sziget-mini-logo {
+    height: 70px;
+    border: 1px solid #000;
+    padding: 5px;
+    background-color: #EAD7C5;
 }
 
-.nav a:hover{
-    text-decoration:underline;
-}
-body{
-    margin:0;
-    font-family:Arial, sans-serif;
+.sziget-fo-link {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none !important;
 }
 
-
-.header{
-    background:#FFF1A8;
-    padding:15px 40px;
+.sziget-nav-item {
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: none !important;
 }
 
-.header-left{
-    display:flex;
-    align-items:center;
-    gap:30px;
+/* PROFIL ÉS NÉV */
+.sziget-profil-keret {
+    background-color: #FFF1A8;
 }
 
-
-.logo{
-    font-size:24px;
-    font-weight:bold;
+.sziget-profil-nev {
+    background-color: #FFF1A8;
+    font-size: 1.8rem;
+    font-weight: bold;
 }
 
-
-.nav a{
-    text-decoration:none;
-    color:#333;
-    margin-right:20px;
-    font-weight:bold;
+/* KÁRTYÁK AZ X MINTÁVAL */
+.sziget-kartya {
+    width: 160px;
+    height: 160px;
+    background-color: #ffffff;
+    border: 1px solid #000;
+    /* Ez rajzolja az X-et a közepére */
+    background-image: linear-gradient(to top left, transparent 49.5%, black 49.5%, black 50.5%, transparent 50.5%),
+                      linear-gradient(to top right, transparent 49.5%, black 49.5%, black 50.5%, transparent 50.5%);
 }
 
-.nav a:hover{
-    text-decoration:underline;
+/* LÁBLÉC EXTRÁK */
+.sziget-jogok {
+    font-weight: bold;
 }
 
+.sziget-input {
+    border: 1px solid #000 !important;
+    border-radius: 0 !important;
+    background-color: #ffffff !important;
+}
+
+.sziget-gomb {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
