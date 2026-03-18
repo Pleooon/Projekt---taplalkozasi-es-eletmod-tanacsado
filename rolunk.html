@@ -11,7 +11,6 @@
 <body>
 
     <nav>
-        <img src="img/oldallogo.png" alt="">
         <div class="logo">A béke <span>Szigete</span></div>
         <ul>
             <li><a href="index.html">Kezdőlap</a></li>
@@ -69,14 +68,24 @@
             </div>
         </div>
     </section>
-
-    <footer id="contact">
-        <div class="container">
-            <h2>Készen állsz a változásra?</h2>
-            <p>Írj nekem, és kezdjük el a közös munkát!</p>
-            <p><strong>Email:</strong> info@gitaron.hu | <strong>Telefon:</strong> +36 30 123 4567</p>
-            <div class="socials">
-                <a href="#">Instagram</a> | <a href="#">Facebook</a>
+ <footer class="sziget-lablec container-fluid border-top border-dark">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <p class="m-1">📧 bekeszigete@gmail.com</p>
+                    <p class="m-1">📍 bekegym ( jozsef attila u 34)</p>
+                    <p class="m-1">📞 +36 20 432 6007</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <span class="sziget-jogok">Minden jog fenntartva @2026</span>
+                </div>
+                <div class="col-md-4">
+                    <form class="d-flex flex-column gap-2">
+                        <input type="email" class="form-control form-control-sm sziget-input" placeholder="ide írd le az email címed!">
+                        <textarea class="form-control form-control-sm sziget-input" placeholder="ide írd az üzeneted!"></textarea>
+                        <button type="submit" class="sziget-gomb py-2">KÜLDÉS</button>
+                    </form>
+                </div>
             </div>
         </div>
     </footer>
