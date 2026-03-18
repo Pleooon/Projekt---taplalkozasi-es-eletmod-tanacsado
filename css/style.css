@@ -91,6 +91,11 @@ p, span, div, a, h2, button, input, textarea {
   padding: 4px;
   font-size: 0.8rem;
 }
+.sajat-navbar {
+  background-color: transparent !important;
+  box-shadow: none;
+}
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Montserrat', sans-serif; color: #444; background-color: #fdfdfd; line-height: 1.7; }
 span { color: #2d6a4f; } 
