@@ -63,26 +63,34 @@ p, span, div, a, h2, button, input, textarea {
                       linear-gradient(to top right, transparent 49.5%, black 49.5%, black 50.5%, transparent 50.5%);
 }
 
-/* LÁBLÉC EXTRÁK */
-.sziget-jogok {
-    font-weight: bold;
+.sziget-lablec {
+  padding: 5px 0;
+  font-size: 0.85rem;
 }
 
-.sziget-input {
-    border: 1px solid #000 !important;
-    border-radius: 0 !important;
-    background-color: #ffffff !important;
+.sziget-lablec p {
+  margin: 0;
+  line-height: 1.2;
+}
+
+.sziget-lablec .row {
+  align-items: center;
+}
+
+.sziget-lablec input,
+.sziget-lablec textarea {
+  padding: 3px 6px;
+  font-size: 0.8rem;
+}
+
+.sziget-lablec textarea {
+  height: 45px;
 }
 
 .sziget-gomb {
-    background-color: #000000 !important;
-    color: #ffffff !important;
-    border: none;
-    font-weight: bold;
-    text-transform: uppercase;
+  padding: 4px;
+  font-size: 0.8rem;
 }
-
-
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Montserrat', sans-serif; color: #444; background-color: #fdfdfd; line-height: 1.7; }
 span { color: #2d6a4f; } 
