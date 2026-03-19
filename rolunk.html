@@ -11,27 +11,51 @@
 <body>
    
 
-    
-
- <header class="sziget-fejlec container-fluid border-bottom border-dark">
-        <div class="container h-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-3">
-                    <img src="img/oldallogo.png" class="sziget-mini-logo" alt="Logo">
-                </div>
-                <div class="col-6 text-center">
-                    <a href="index.html" class="sziget-fo-link">A béke szigete</a>
-                </div>
-                <div class="col-3 d-flex justify-content-end gap-3">
-                    <a href="rolunk.html" class="sziget-nav-item">Rolunk</a>
-                    <a href="ajanlat.html" class="sziget-nav-item">Ajánlataink</a>
-                    <a href="termekek.html" class="sziget-nav-item">Vásárolj most!</a>
-                </div>
-            </div>
+<header class="sziget-fejlec container-fluid border-bottom border-dark">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-3">
+          <img src="img/oldallogo.png" class="sziget-mini-logo" alt="Logo">
         </div>
-        
-    </header>
+        <div class="col-6 text-center">
+          <a href="index.html" class="sziget-fo-link nav-link active">A béke szigete</a>
+        </div>
 
+        <nav class="navbar navbar-expand-lg sajat-navbar col-3 d-flex justify-content-end gap-3">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="rolunk.html">Rólunk</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="ajanlat.html">Ajánlataink</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Vásárolj most!
+                  </a>
+                  <ul class="dropdown-menu">
+
+                    <li><a class="dropdown-item" href="termekek.html">Termékek</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="shop.html">Ruháink</a></li>
+                  </ul>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+        </nav>
+  </header>
 
     <section id="philosophy" class="section">
         <div class="container">
@@ -65,7 +89,7 @@
                     <p>Hosszú távú mentorálás a fenntartható szokások kialakításáért.</p>
                 </div>
                 <div class="card">
-                    <h3>Sporttáplálkozás</h3>
+                    <h3><a href="receptek.html">Sporttáplálkozás</a></h3>
                     <p>Teljesítményfokozás és regeneráció támogatása étkezéssel.</p>
                 </div>
             </div>
