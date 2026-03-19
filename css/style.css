@@ -300,3 +300,56 @@ body {
         gap: 20px;
     }
 }
+
+/* Fő konténer */
+#idopont-container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    font-family: Arial;
+    background-color: #f9f9f9;
+}
+
+/* Cím */
+#idopont-cim {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Input blokkok */
+.idopont-mezo {
+    margin-bottom: 15px;
+}
+
+.idopont-mezo label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.idopont-mezo input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Gomb */
+#idopont-gomb-div {
+    text-align: center;
+}
+
+#idopont-gomb {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#idopont-gomb:hover {
+    background-color: #45a049;
+}
