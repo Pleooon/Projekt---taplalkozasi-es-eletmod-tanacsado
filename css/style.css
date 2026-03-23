@@ -58,8 +58,14 @@ p, span, div, a, h2, button, input, textarea {
 
 
 .sziget-lablec {
-  padding: 5px 0;
-  font-size: 0.85rem;
+  border-radius: 20px 20px 0 0; /* felül lekerekített */
+  overflow: hidden; /* hogy a belső elemek is kövessék */
+  box-shadow: 0 -5px 15px rgba(0,0,0,0.1); /* finom árnyék */
+  margin-top: 30px; /* kis tér a footer előtt */
+}
+
+.sziget-input {
+  border-radius: 10px;
 }
 
 .sziget-lablec p {
@@ -82,8 +88,12 @@ p, span, div, a, h2, button, input, textarea {
 }
 
 .sziget-gomb {
-  padding: 4px;
-  font-size: 0.8rem;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+}
+
+.sziget-gomb:hover {
+  transform: translateY(-2px);
 }
 .sajat-navbar {
   background-color: transparent !important;
