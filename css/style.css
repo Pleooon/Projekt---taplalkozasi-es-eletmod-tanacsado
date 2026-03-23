@@ -365,3 +365,59 @@ body {
 #idopont-gomb:hover {
     background-color: #45a049;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.input-wrapper {
+    position: relative;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding-right: 80px; /* hely az ikonnak */
+}
+
+#email-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: gray;
+    pointer-events: none;
+}
+
+const emailInput = document.getElementById("email-input");
+const emailIcon = document.getElementById("email-icon");
+
+emailInput.addEventListener("input", () => {
+    const value = emailInput.value;
+
+    if (value.includes("@")) {
+        const domain = value.split("@")[1];
+
+        if (domain.includes("gmail")) {
+            emailIcon.textContent = "📧 Gmail";
+        } else if (domain.includes("freemail")) {
+            emailIcon.textContent = "📧 Freemail";
+        } else if (domain.includes("citromail")) {
+            emailIcon.textContent = "📧 Citromail";
+        } else if (domain.includes("outlook") || domain.includes("hotmail")) {
+            emailIcon.textContent = "📧 Outlook";
+        } else {
+            emailIcon.textContent = "📧 " + domain;
+        }
+    } else {
+        emailIcon.textContent = "📧";
+    }
+});
