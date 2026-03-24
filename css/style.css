@@ -189,27 +189,273 @@ body {
     }
 }
 
+<<<<<<< HEAD
 const emailInput = document.getElementById("email-input");
 const emailIcon = document.getElementById("email-icon");
+=======
+/* Fő konténer */
+#idopont-container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    font-family: Arial;
+    background-color: #f9f9f9;
+}
 
-emailInput.addEventListener("input", () => {
-    const value = emailInput.value;
+/* Cím */
+#idopont-cim {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
 
-    if (value.includes("@")) {
-        const domain = value.split("@")[1];
+/* Input blokkok */
+.idopont-mezo {
+    margin-bottom: 15px;
+}
 
-        if (domain.includes("gmail")) {
-            emailIcon.textContent = "📧 Gmail";
-        } else if (domain.includes("freemail")) {
-            emailIcon.textContent = "📧 Freemail";
-        } else if (domain.includes("citromail")) {
-            emailIcon.textContent = "📧 Citromail";
-        } else if (domain.includes("outlook") || domain.includes("hotmail")) {
-            emailIcon.textContent = "📧 Outlook";
-        } else {
-            emailIcon.textContent = "📧 " + domain;
-        }
-    } else {
-        emailIcon.textContent = "📧";
+.idopont-mezo label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.idopont-mezo input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Gomb */
+#idopont-gomb-div {
+    text-align: center;
+}
+
+#idopont-gomb {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#idopont-gomb:hover {
+    background-color: #45a049;
+}
+.shop-main {
+  padding: 30px;
+  background-color: #f3e2b3;
+}
+
+/* 🔥 GRID + KÖZÉPRE */
+.shop-row {
+  display: grid;
+  grid-template-columns: repeat(3, 320px); /* fix 3 oszlop */
+  justify-content: center; /* középre */
+  gap: 25px;
+}
+
+/* KÁRTYA (nagyobb) */
+.shop-card {
+  width: 100%;
+  border: 2px solid orange;
+  border-radius: 14px;
+  padding: 12px;
+  background: white;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+}
+
+/* CAROUSEL NAGYOBB */
+.shop-carousel {
+  height: 300px;
+}
+
+/* KÉP NAGYOBB */
+.shop-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* hover */
+.shop-card:hover {
+  transform: scale(1.04);
+  transition: 0.3s;
+}
+
+/* MOBIL */
+@media (max-width: 1000px) {
+  .shop-row {
+    grid-template-columns: repeat(2, 300px);
+  }
+}
+
+@media (max-width: 600px) {
+  .shop-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+#main-layout-custom {
+    display: flex;
+    justify-content: space-between; /* SZÉLEKRE HÚZ */
+    align-items: flex-start;
+    gap: 60px;
+    padding: 40px 60px; /* ne margin, hanem padding */
+    width: 100%;
+}
+
+/* BAL OLDAL */
+#services-container-custom {
+    width: 380px; /* nagyobb */
+}
+
+.service-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background: white;
+}
+
+/* KÖZÉP */
+#booking-container-custom {
+    width: 360px;
+    border: 2px solid green;
+    padding: 25px;
+    border-radius: 15px;
+    background: white;
+    text-align: center;
+    margin: 0 auto; /* EZ KÖZÉPRE TESZI */
+}
+
+
+#booking-container-custom input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 6px;
+}
+
+#booking-container-custom button {
+    background: green;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+/* EMAIL IKON */
+.input-wrapper {
+    position: relative;
+}
+
+.input-wrapper input {
+    padding-right: 80px;
+}
+
+#email-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 13px;
+    color: gray;
+}
+
+/* JOBB OLDAL */
+#map-container-custom {
+    width: 420px;
+}
+>>>>>>> 5d08a50c215309e231df0ba0535fc1d31331a119
+
+
+#map-container-custom iframe {
+    width: 100%;
+    height: 320px;
+    border-radius: 15px;
+}
+
+body {
+    margin: 0;
+}
+
+#main-layout-custom {
+    min-height: 70vh; /* EZ A LÉNYEG */
+}
+
+#services-container-custom {
+    max-width: 320px;
+}
+
+.services-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* GRID */
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 oszlop */
+    gap: 15px;
+}
+
+@media (max-width: 1200px) {
+    #main-layout-custom {
+        flex-direction: column;
+        align-items: center;
     }
-});
+
+    #services-container-custom,
+    #booking-container-custom,
+    #map-container-custom {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+/* KÁRTYA */
+.service-card {
+    background: white;
+    padding: 20px; /* nagyobb */
+    border-radius: 16px;
+    text-align: center;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+    min-height: 140px; /* egységes méret */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* HOVER EFFECT */
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* KIEMELT */
+.service-card.highlight {
+    border: 2px solid green;
+}
+
+/* SZÖVEGEK */
+.service-card h5 {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.service-card p {
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+/* ÁR */
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: green;
+}
