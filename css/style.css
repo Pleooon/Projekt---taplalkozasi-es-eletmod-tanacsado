@@ -189,10 +189,8 @@ body {
     }
 }
 
-<<<<<<< HEAD
 const emailInput = document.getElementById("email-input");
 const emailIcon = document.getElementById("email-icon");
-=======
 /* Fő konténer */
 #idopont-container {
     width: 400px;
@@ -370,7 +368,6 @@ const emailIcon = document.getElementById("email-icon");
 #map-container-custom {
     width: 420px;
 }
->>>>>>> 5d08a50c215309e231df0ba0535fc1d31331a119
 
 
 #map-container-custom iframe {
