@@ -365,7 +365,6 @@ body {
 #idopont-gomb:hover {
     background-color: #45a049;
 }
-<<<<<<< HEAD
 .shop-main {
   padding: 30px;
   background-color: #f3e2b3;
@@ -420,19 +419,6 @@ body {
     grid-template-columns: 1fr;
   }
 }
-=======
-
-
-
-
-
-
-
-
-
-
-
-
 
 #main-layout-custom {
     display: flex;
@@ -592,4 +578,3 @@ body {
     font-weight: bold;
     color: green;
 }
->>>>>>> ddda0d31f85514ea31b3e802b785bdb51569025e
