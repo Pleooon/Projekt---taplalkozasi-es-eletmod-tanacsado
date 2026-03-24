@@ -58,51 +58,82 @@
           </div>
         </nav>
   </header>
-<div id="idopont-container">
+<div id="main-layout-custom">
 
-    <div id="idopont-cim">
-        Időpontfoglalás
-    </div>
+    <!-- BAL: SZOLGÁLTATÁSOK -->
+  <div id="services-container-custom">
+    <h3 class="services-title">Szolgáltatások</h3>
 
-    <div id="nev-div" class="idopont-mezo">
-        <label for="nev-input">Név</label>
-        <input type="text" id="nev-input">
-    </div>
+    <div class="services-grid">
 
-   <div id="email-div" class="idopont-mezo">
-    <label for="email-input">Email</label>
+        <div class="service-card">
+            <h5>Alap konzultáció</h5>
+            <p>60 perc tanácsadás</p>
+            <span class="price">25.000 Ft</span>
+        </div>
 
-    <div class="input-wrapper">
-        <input type="email" id="email-input">
-        <span id="email-icon">📧</span>
+        <div class="service-card highlight">
+            <h5>Prémium étrend</h5>
+            <p>Személyre szabott terv</p>
+            <span class="price">35.000 Ft</span>
+        </div>
+
+        <div class="service-card">
+            <h5>Havi program</h5>
+            <p>Teljes életmódváltás</p>
+            <span class="price">80.000 Ft</span>
+        </div>
+
+        <div class="service-card">
+            <h5>1 hónapos program</h5>
+            <p>Folyamatos kapcsolat</p>
+            <span class="price">75.000 Ft</span>
+        </div>
+
+        <div class="service-card">
+            <h5>3 hónapos program</h5>
+            <p>Étrend + támogatás</p>
+            <span class="price">200.000 Ft</span>
+        </div>
+
+        <div class="service-card">
+            <h5>Sport étrend</h5>
+            <p>Tömegnövelés / fogyás</p>
+            <span class="price">80.000 Ft</span>
+        </div>
+
     </div>
 </div>
 
 
-    <div id="datum-div" class="idopont-mezo">
-        <label for="datum-input">Dátum</label>
-        <input type="date" id="datum-input">
+
+    <!-- KÖZÉP: IDŐPONT -->
+    <div id="booking-container-custom">
+
+        <h4>Időpontfoglalás</h4>
+
+        <input type="text" placeholder="Név">
+
+        <div class="input-wrapper">
+            <input type="email" id="email-input" placeholder="Email">
+            <span id="email-icon">📧</span>
+        </div>
+
+        <input type="date">
+        <input type="time">
+
+        <button>Foglalás</button>
     </div>
 
-    <div id="ido-div" class="idopont-mezo">
-        <label for="ido-input">Időpont</label>
-        <input type="time" id="ido-input">
-    </div>
 
-    <div id="gomb-div">
-        <button id="idopont-gomb">Foglalás</button>
+    <!-- JOBB: TÉRKÉP -->
+    <div id="map-container-custom">
+        <iframe src="https://maps.google.com/maps?q=Makó&output=embed"></iframe>
     </div>
 
 </div>
 
-<div id="map-container-custom">
-    <iframe 
-        src="https://maps.google.com/maps?q=Makó&output=embed"
-        width="100%" 
-        height="300"
-        style="border:0;">
-    </iframe>
-</div>
+
 
 
   <footer class="sziget-lablec container-fluid border-top border-dark">
