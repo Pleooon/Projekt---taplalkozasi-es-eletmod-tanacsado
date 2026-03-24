@@ -365,6 +365,7 @@ body {
 #idopont-gomb:hover {
     background-color: #45a049;
 }
+<<<<<<< HEAD
 .shop-main {
   padding: 30px;
   background-color: #f3e2b3;
@@ -419,3 +420,176 @@ body {
     grid-template-columns: 1fr;
   }
 }
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+#main-layout-custom {
+    display: flex;
+    justify-content: space-between; /* SZÉLEKRE HÚZ */
+    align-items: flex-start;
+    gap: 60px;
+    padding: 40px 60px; /* ne margin, hanem padding */
+    width: 100%;
+}
+
+/* BAL OLDAL */
+#services-container-custom {
+    width: 380px; /* nagyobb */
+}
+
+.service-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background: white;
+}
+
+/* KÖZÉP */
+#booking-container-custom {
+    width: 360px;
+    border: 2px solid green;
+    padding: 25px;
+    border-radius: 15px;
+    background: white;
+    text-align: center;
+    margin: 0 auto; /* EZ KÖZÉPRE TESZI */
+}
+
+
+#booking-container-custom input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 6px;
+}
+
+#booking-container-custom button {
+    background: green;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+/* EMAIL IKON */
+.input-wrapper {
+    position: relative;
+}
+
+.input-wrapper input {
+    padding-right: 80px;
+}
+
+#email-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 13px;
+    color: gray;
+}
+
+/* JOBB OLDAL */
+#map-container-custom {
+    width: 420px;
+}
+
+
+#map-container-custom iframe {
+    width: 100%;
+    height: 320px;
+    border-radius: 15px;
+}
+
+body {
+    margin: 0;
+}
+
+#main-layout-custom {
+    min-height: 70vh; /* EZ A LÉNYEG */
+}
+
+#services-container-custom {
+    max-width: 320px;
+}
+
+.services-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* GRID */
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 oszlop */
+    gap: 15px;
+}
+
+@media (max-width: 1200px) {
+    #main-layout-custom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #services-container-custom,
+    #booking-container-custom,
+    #map-container-custom {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+/* KÁRTYA */
+.service-card {
+    background: white;
+    padding: 20px; /* nagyobb */
+    border-radius: 16px;
+    text-align: center;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+    min-height: 140px; /* egységes méret */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* HOVER EFFECT */
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* KIEMELT */
+.service-card.highlight {
+    border: 2px solid green;
+}
+
+/* SZÖVEGEK */
+.service-card h5 {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.service-card p {
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+/* ÁR */
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: green;
+}
+>>>>>>> ddda0d31f85514ea31b3e802b785bdb51569025e
