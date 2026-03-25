@@ -513,7 +513,6 @@ body {
     font-weight: bold;
     color: green;
 }
-<<<<<<< Updated upstream
 
 #philosophy p {
     font-size: 17px;
@@ -656,8 +655,8 @@ body {
 
 #philosophy-custom .container {
     max-width: 900px;
-=======
- .shop-main {
+}
+.shop-main {
       padding: 20px;
     }
 
@@ -706,5 +705,4 @@ body {
 
 .shop-col {
   margin: 15px; /* EZ ad távolságot */
->>>>>>> Stashed changes
 }
