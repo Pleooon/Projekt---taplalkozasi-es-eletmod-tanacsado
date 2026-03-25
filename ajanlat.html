@@ -11,7 +11,7 @@
 
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
 
     <header class="sziget-fejlec container-fluid border-bottom border-dark">
     <div class="container h-100">
@@ -59,108 +59,157 @@
         </nav>
   </header>
 <div id="main-layout-custom">
+<div class="container mt-4">
+    <div class="row">
 
-    <!-- BAL: SZOLGÁLTATÁSOK -->
-  <div id="services-container-custom">
-    <h3 class="services-title">Szolgáltatások</h3>
+        <!-- BAL OLDAL (szolgáltatások + accordion) -->
+        <div class="col-lg-6">
 
-    <div class="services-grid">
+            <div class="services-grid d-flex flex-wrap gap-3">
 
-        <div class="service-card">
-            <h5>Alap konzultáció</h5>
-            <p>60 perc tanácsadás</p>
-            <span class="price">25.000 Ft</span>
+                <!-- KÁRTYÁK -->
+                <div class="service-card custom-service-card">
+                    <div class="service-icon">💬</div>
+                    <h5>Alap konzultáció</h5>
+                    <p>60 perc tanácsadás</p>
+                    <span class="price">25.000 Ft</span>
+                </div>
+
+                <div class="service-card highlight custom-service-card">
+                    <div class="service-icon">🥗</div>
+                    <h5>Prémium étrend</h5>
+                    <p>Személyre szabott terv</p>
+                    <span class="price">35.000 Ft</span>
+                </div>
+
+                <div class="service-card custom-service-card">
+                    <div class="service-icon">🔥</div>
+                    <h5>Havi program</h5>
+                    <p>Teljes életmódváltás</p>
+                    <span class="price">80.000 Ft</span>
+                </div>
+
+                <div class="service-card custom-service-card">
+                    <div class="service-icon">📅</div>
+                    <h5>1 hónapos program</h5>
+                    <p>Folyamatos kapcsolat</p>
+                    <span class="price">75.000 Ft</span>
+                </div>
+
+                <div class="service-card custom-service-card">
+                    <div class="service-icon">🏆</div>
+                    <h5>3 hónapos program</h5>
+                    <p>Étrend + támogatás</p>
+                    <span class="price">200.000 Ft</span>
+                </div>
+
+                <div class="service-card custom-service-card">
+                    <div class="service-icon">💪</div>
+                    <h5>Sport étrend</h5>
+                    <p>Tömegnövelés / fogyás</p>
+                    <span class="price">80.000 Ft</span>
+                </div>
+
+            </div>
+
+            <!-- ACCORDION -->
+            <div class="accordion mt-4" id="infoAccordionCustom">
+
+                <!-- VÉLEMÉNYEK -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOneCustom">
+                            Vendég visszajelzések
+                        </button>
+                    </h2>
+
+                    <div id="collapseOneCustom" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+
+                            <div class="testimonial-card-custom">
+                                <p>"3 hónap alatt -8 kg"</p>
+                                <span>– Anna</span>
+                            </div>
+
+                            <div class="testimonial-card-custom">
+                                <p>"Sokkal energikusabb lettem"</p>
+                                <span>– Péter</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KINEK AJÁNLOTT -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwoCustom">
+                            Kinek ajánlott?
+                        </button>
+                    </h2>
+
+                    <div id="collapseTwoCustom" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+
+                            <ul class="target-list-custom">
+                                <li>✔ Fogyni szeretnél</li>
+                                <li>✔ Életmódot váltanál</li>
+                                <li>✔ Sportolsz</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
 
-        <div class="service-card highlight">
-            <h5>Prémium étrend</h5>
-            <p>Személyre szabott terv</p>
-            <span class="price">35.000 Ft</span>
-        </div>
+        <!-- KÖZÉP -->
+        <div class="col-lg-3">
+            <div id="booking-container-custom">
+                <h4>Időpontfoglalás</h4>
 
-        <div class="service-card">
-            <h5>Havi program</h5>
-            <p>Teljes életmódváltás</p>
-            <span class="price">80.000 Ft</span>
-        </div>
+                <input type="text" placeholder="Név" class="form-control mb-2">
 
-        <div class="service-card">
-            <h5>1 hónapos program</h5>
-            <p>Folyamatos kapcsolat</p>
-            <span class="price">75.000 Ft</span>
-        </div>
+                <div class="input-wrapper mb-2">
+                    <input type="email" id="email-input" class="form-control" placeholder="Email">
+                </div>
 
-        <div class="service-card">
-            <h5>3 hónapos program</h5>
-            <p>Étrend + támogatás</p>
-            <span class="price">200.000 Ft</span>
-        </div>
+                <input type="date" class="form-control mb-2">
+                <input type="time" class="form-control mb-2">
 
-        <div class="service-card">
-            <h5>Sport étrend</h5>
-            <p>Tömegnövelés / fogyás</p>
-            <span class="price">80.000 Ft</span>
+                <button class="btn btn-success w-100">Foglalás</button>
+            </div>
         </div>
-
     </div>
 </div>
-
-
-
-    <!-- KÖZÉP: IDŐPONT -->
-    <div id="booking-container-custom">
-
-        <h4>Időpontfoglalás</h4>
-
-        <input type="text" placeholder="Név">
-
-        <div class="input-wrapper">
-            <input type="email" id="email-input" placeholder="Email">
-            <span id="email-icon">📧</span>
-        </div>
-
-        <input type="date">
-        <input type="time">
-
-        <button>Foglalás</button>
-    </div>
-
-
-    <!-- JOBB: TÉRKÉP -->
-    <div id="map-container-custom">
-        <iframe src="https://maps.google.com/maps?q=Makó&output=embed"></iframe>
-    </div>
-
 </div>
+<footer class="sziget-lablec container-fluid w-100 border-top border-dark mt-auto">
+    <div class="container py-3">
+        <div class="row align-items-center">
 
+            <div class="col-md-4">
+                <p class="m-1">📧 bekeszigete@gmail.com</p>
+                <p class="m-1">📍 bekegym (jozsef attila u 34)</p>
+                <p class="m-1">📞 +36 20 432 6007</p>
+            </div>
 
+            <div class="col-md-4 text-center">
+                <span>Minden jog fenntartva @2026</span>
+            </div>
 
+            <div class="col-md-4">
+                <form class="d-flex flex-column gap-2">
+                    <input type="email" class="form-control form-control-sm" placeholder="Email">
+                    <textarea class="form-control form-control-sm" placeholder="Üzenet"></textarea>
+                    <button class="btn btn-dark">KÜLDÉS</button>
+                </form>
+            </div>
 
-  <footer class="sziget-lablec container-fluid border-top border-dark">
-    <div class="container py-1">
-      <div class="row align-items-center">
-        <div class="col-md-4">
-          <p class="m-1">📧 bekeszigete@gmail.com</p>
-          <p class="m-1">📍 bekegym ( jozsef attila u 34)</p>
-          <p class="m-1">📞 +36 20 432 6007</p>
         </div>
-        <div class="col-md-4 text-center">
-          <span class="sziget-jogok">Minden jog fenntartva @2026</span>
-        </div>
-        <div class="col-md-4">
-          <form class="d-flex flex-column gap-2">
-            <input type="email" class="form-control form-control-sm sziget-input"
-              placeholder="ide írd le az email címed!">
-            <textarea class="form-control form-control-sm sziget-input" placeholder="ide írd az üzeneted!"></textarea>
-            <button type="submit" class="sziget-gomb py-2">KÜLDÉS</button>
-          </form>
-        </div>
-      </div>
     </div>
-<<<<<<< HEAD
-  </footer>
-
-=======
+</footer>
 
 
 
@@ -262,9 +311,6 @@ emailInput.addEventListener("input", () => {
     }
 });
 </script>
-
-</footer>
->>>>>>> 5d08a50c215309e231df0ba0535fc1d31331a119
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
