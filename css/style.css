@@ -189,8 +189,6 @@ body {
     }
 }
 
-const emailInput = document.getElementById("email-input");
-const emailIcon = document.getElementById("email-icon");
 /* Fő konténer */
 #idopont-container {
     width: 400px;
@@ -311,6 +309,13 @@ const emailIcon = document.getElementById("email-icon");
 #services-container-custom {
     width: 380px; /* nagyobb */
 }
+#services-custom .container {
+    max-width: 900px;
+}
+.services-custom {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
 
 .service-card {
     border: 1px solid #ccc;
@@ -319,6 +324,58 @@ const emailIcon = document.getElementById("email-icon");
     border-radius: 8px;
     background: white;
 }
+
+.custom-service-card {
+    border-radius: 15px;
+    padding: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    text-align: center;
+}
+.custom-service-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+.service-icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+
+#testimonials-section-custom {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.testimonial-card-custom {
+    background: #fff;
+    padding: 15px;
+    margin: 10px auto;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-style: italic;
+}
+
+#target-section-custom {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.target-list-custom {
+    list-style: none;
+    padding: 0;
+}
+
+.target-list-custom li {
+    background: #f8f8f8;
+    margin: 8px auto;
+    padding: 10px;
+    max-width: 350px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
 
 /* KÖZÉP */
 #booking-container-custom {
@@ -455,4 +512,147 @@ body {
     font-size: 18px;
     font-weight: bold;
     color: green;
+}
+
+#philosophy p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+#philosophy h3 {
+    color: green;
+    font-weight: bold;
+}
+
+/* SECTION */
+.section-custom {
+    padding: 60px 0;
+}
+/* CÍM */
+.section-title-custom h2 {
+    font-weight: 600;
+}
+
+.underline-custom {
+    width: 60px;
+    height: 3px;
+    background: green;
+    margin: 10px auto;
+}
+
+.philosophy-text-custom {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.stats-container-custom {
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+/* STAT CARD */
+.stat-card-custom {
+    background: #f1f1f1;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.stat-card-custom:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.stat-card-custom h3 {
+    color: green;
+    font-weight: bold;
+}
+
+/* SERVICES ALATTI KÁRTYÁK FIX */
+.service-grid {
+    margin-top: 50px;
+}
+
+.service-grid .card {
+    border-radius: 12px;
+    padding: 20px;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.service-grid .card:hover {
+    transform: translateY(-5px);
+}
+.stat-card-custom {
+    background: white;
+}
+/* ===== RÓLUNK SZEKCIÓ ===== */
+
+.section-custom {
+    padding: 80px 0;
+}
+
+.philosophy-text-custom p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+
+
+.stat-card-custom {
+    background: #f1f1f1;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.stat-card-custom h3 {
+    color: green;
+    font-weight: bold;
+}
+
+/* ===== SERVICES ===== */
+
+.section-custom {
+    padding: 40px 0;
+}
+.service-card-custom-2 {
+    background: #f1f1f1;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.service-card-custom-2:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.service-card-custom-2 h5 {
+    margin-bottom: 10px;
+}
+
+/* ===== CÍM DESIGN ===== */
+
+.section-title-custom h2 {
+    font-weight: bold;
+}
+
+.underline-custom {
+    width: 60px;
+    height: 3px;
+    background: green;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+#philosophy-custom .container {
+    max-width: 900px;
 }
