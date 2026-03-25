@@ -513,6 +513,7 @@ body {
     font-weight: bold;
     color: green;
 }
+<<<<<<< Updated upstream
 
 #philosophy p {
     font-size: 17px;
@@ -655,4 +656,55 @@ body {
 
 #philosophy-custom .container {
     max-width: 900px;
+=======
+ .shop-main {
+      padding: 20px;
+    }
+
+    .shop-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .shop-col {
+      width: 300px;
+    }
+
+    .shop-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      padding: 10px;
+      background: white;
+    }
+
+    .shop-img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    /* CÍM DOBOZ */
+    .shop-title {
+      display: block;
+      width: fit-content;
+      margin: 40px auto 20px;
+      padding: 10px 25px;
+      background-color: #FFF1A8;
+      border-radius: 12px;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .shop-row {
+  display: flex;
+  justify-content: center;
+}
+
+.shop-col {
+  margin: 15px; /* EZ ad távolságot */
+>>>>>>> Stashed changes
 }
