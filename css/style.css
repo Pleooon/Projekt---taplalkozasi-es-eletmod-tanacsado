@@ -706,3 +706,65 @@ body {
 .shop-col {
   margin: 15px; /* EZ ad távolságot */
 }
+
+body {
+  background-color: #d2c1ad;
+}
+
+/* HERO */
+.hero-sziget {
+  background: #e6d28f;
+  padding: 80px 0;
+}
+
+.hero-cim {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.hero-szoveg {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.hero-gomb {
+  background-color: black;
+  color: white;
+  padding: 10px 25px;
+}
+
+/* SZOLGÁLTATÁS */
+.szolgaltatas-szekcio {
+  padding: 60px 0;
+}
+
+.szolg-kartya {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.szolg-kartya:hover {
+  transform: scale(1.05);
+}
+
+/* BIZALOM */
+.bizalom-szekcio {
+  background: #e6d28f;
+  padding: 50px;
+}
+
+/* RÓLAM */
+.rolam-szekcio {
+  padding: 60px 0;
+}
+
+/* SHOP */
+.shop-kartya {
+  transition: 0.3s;
+}
+
+.shop-kartya:hover {
+  transform: scale(1.05);
+}

@@ -11,170 +11,142 @@
 
 <body>
 
-  <header class="sziget-fejlec container-fluid border-bottom border-dark">
-    <div class="container h-100">
-      <div class="row h-100 align-items-center">
-        <div class="col-3">
-          <img src="img/oldallogo.png" class="sziget-mini-logo" alt="Logo">
-        </div>
-        <div class="col-6 text-center">
-          <a href="index.html" class="sziget-fo-link nav-link active">A béke szigete</a>
-        </div>
-
-        <nav class="navbar navbar-expand-lg sajat-navbar col-3 d-flex justify-content-end gap-3">
-          <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="rolunk.html">Rólunk</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="ajanlat.html">Ajánlataink</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Vásárolj most!
-                  </a>
-                  <ul class="dropdown-menu">
-
-                    <li><a class="dropdown-item" href="termekek.html">Termékek</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="shop.html">Ruháink</a></li>
-                  </ul>
-                </li>
-              </ul>
-
-            </div>
-          </div>
-        </nav>
-  </header>
-<main class="container py-5">
-
-  <div class="row">
-    
-    <!-- BAL OLDAL -->
-    <div class="col-md-4">
-      <div class="border border-dark p-2 text-center">
-        <a href="rolunk.html">
-          <img src="img/Gitaron.png" class="img-fluid" alt="Git Áron">
-        </a>
+<header class="sziget-fejlec container-fluid border-bottom border-dark">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-3">
+        <img src="img/oldallogo.png" class="sziget-mini-logo" alt="Logo">
       </div>
-      <div class="border border-dark border-top-0 py-3 text-center">
+      <div class="col-6 text-center">
+        <a href="index.html" class="sziget-fo-link nav-link active">A béke szigete</a>
+      </div>
+
+      <nav class="navbar navbar-expand-lg col-3 d-flex justify-content-end">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse show">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="rolunk.html">Rólunk</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ajanlat.html">Ajánlataink</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                  Vásárolj most!
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="termekek.html">Termékek</a></li>
+                  <li><a class="dropdown-item" href="shop.html">Ruháink</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+
+<!-- 🔥 HERO -->
+<section class="hero-sziget text-center">
+  <div class="container">
+    <h1 class="hero-cim">Változtasd meg az életed</h1>
+    <p class="hero-szoveg">Táplálkozási és életmód tanácsadás személyre szabva</p>
+    <a href="ajanlat.html" class="btn hero-gomb">Kezdjük el</a>
+  </div>
+</section>
+
+<!-- 💪 SZOLGÁLTATÁSOK -->
+<section class="szolgaltatas-szekcio text-center">
+  <div class="container">
+    <h2>Szolgáltatások</h2>
+    <div class="row mt-4">
+
+      <div class="col-md-4">
+        <div class="szolg-kartya">
+          <h5>Alap konzultáció</h5>
+          <p>60 perc személyes tanácsadás</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="szolg-kartya">
+          <h5>Étrend tervezés</h5>
+          <p>Személyre szabott étrend</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="szolg-kartya">
+          <h5>Teljes program</h5>
+          <p>Komplett életmódváltás</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ⭐ BIZALOM -->
+<section class="bizalom-szekcio text-center">
+  <div class="container">
+    <h2>Miért engem válassz?</h2>
+    <p>✔ 100% elégedett ügyfél</p>
+    <p>✔ Személyre szabott tervek</p>
+    <p>✔ Folyamatos támogatás</p>
+  </div>
+</section>
+
+<section class="rolam-szekcio container py-5">
+  <div class="row">
+
+    <!-- BAL: KÉP -->
+    <div class="col-md-4">
+      <div class="border p-2 text-center">
+        <img src="img/Gitaron.png" class="img-fluid" alt="Git Áron">
+      </div>
+      <div class="border border-top-0 py-2 text-center">
         Git Áron
       </div>
     </div>
 
-    <!-- JOBB OLDAL -->
+    <!-- JOBB: SZÖVEG + RUHÁK -->
     <div class="col-md-8">
 
-      <h2 class="mb-5">
-        Ne a kifogásokat keresd — csináld meg. Egy ismétlés még belefér
-      </h2>
-<div class="row g-4 mb-5"> <div class="col-md-4">
-    <div class="card shadow border-warning">
-      <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner" style="height:230px;">
-          <div class="carousel-item active">
-             <a href="shop.html"><img src="img/ferfinadrag.png" class="d-block w-100" style="height:230px; object-fit:cover;"></a>
-          </div>
-          <div class="carousel-item">
-             <a href="shop.html"><img src="img/ferfipolo.png" class="d-block w-100" style="height:230px; object-fit:cover;"></a>
+      <h3>Ne a kifogásokat keresd — csináld meg</h3>
+      <p>Segítek elérni a céljaidat személyre szabott tervvel.</p>
+      <a href="ajanlat.html" class="btn hero-gomb mb-4">Időpont foglalás</a>
+
+      <!-- 🛒 RUHÁK IDE -->
+      <h4 class="text-center mb-4">Ruházat</h4>
+
+      <div class="row g-3">
+
+        <div class="col-md-4">
+          <div class="card shop-kartya">
+            <img src="img/ferfipolo.png" class="card-img-top">
           </div>
         </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="col-md-4">
-    <div class="card shadow border-warning">
-      <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner" style="height:230px;">
-          <div class="carousel-item active">
-             <a href="shop.html"><img src="img/kék naci.png" class="d-block w-100" style="height:230px; object-fit:cover;"></a>
-          </div>
-          <div class="carousel-item">
-             <a href="shop.html"><img src="img/kek.png" class="d-block w-100" style="height:230px; object-fit:cover;"></a>
+        <div class="col-md-4">
+          <div class="card shop-kartya">
+            <img src="img/kek.png" class="card-img-top">
           </div>
         </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="col-md-4">
-    <div class="card shadow border-warning">
-      <div id="carousel3" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner" style="height:230px;">
-          <div class="carousel-item active">
-            <a href="shop.html"> <img src="img/narancsnaci.png" class="d-block w-100" style="height:230px; object-fit:cover;"></a>
-          </div>
-          <div class="carousel-item">
-            <a href="shop.html"><img src="img/narancs.png" class="d-block w-100" style="height:230px; object-fit:cover;"></a>
+        <div class="col-md-4">
+          <div class="card shop-kartya">
+            <img src="img/narancs.png" class="card-img-top">
           </div>
         </div>
+
       </div>
+
     </div>
+
   </div>
-
-</div>
-
-<div class="row g-4">
-
-  <div class="col-md-4">
-    <div class="card shadow border-warning">
-      <div id="carousel4" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner" style="height:230px;">
-          <div class="carousel-item active">
-             <a href="shop.html"><img src="img/piros sportmelltartó.png" class="d-block w-100" style="height:230px; object-fit:cover;"></a>
-          </div>
-          <div class="carousel-item">
-             <a href="shop.html"><img src="img/ferfipolo.png" class="d-block w-100" style="height:230px; object-fit:cover;"></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-4">
-    <div class="card shadow border-warning">
-      <div id="carousel5" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner" style="height:230px;">
-          <div class="carousel-item active">
-             <a href="shop.html"><img src="img/keknoitopp.png" class="d-block w-100" style="height:230px; object-fit:cover;"></a>
-          </div>
-          <div class="carousel-item">
-             <a href="shop.html"><img src="img/kék naci.png" class="d-block w-100" style="height:230px; object-fit:cover;"></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-4">
-    <div class="card shadow border-warning">
-      <div id="carousel6" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner" style="height:230px;">
-          <div class="carousel-item active">
-            <a href="shop.html"> <img src="img/noipolo.png" class="d-block w-100" style="height:230px; object-fit:cover;"></a>
-          </div>
-          <div class="carousel-item">
-            <a href="shop.html"><img src="img/noinadrag.png" class="d-block w-100" style="height:230px; object-fit:cover;"></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</div>
-
-</main>
+</section>
+</body>
+</html>
 
   <footer class="sziget-lablec container-fluid border-top border-dark">
     <div class="container py-1">
@@ -197,9 +169,8 @@
         </div>
       </div>
     </div>
-  </footer>
+</footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
