@@ -706,3 +706,52 @@ body {
 .shop-col {
   margin: 15px; /* EZ ad távolságot */
 }
+
+.csirkeke-link {
+    position: relative;
+    display: inline-block;
+    padding: 4px 8px;
+    color: #333;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: #FFF1A8; /* EZ A HÁTTÉR */
+    border-radius: 25px; /* lekerekítés */
+    transition: all 0.3s ease;
+}
+
+/* hover effekt */
+.csirkeke-link:hover {
+    color: #000;
+    transform: translateY(-3px);
+    background-color: #ffe97a; /* kicsit sötétebb hover */
+}
+.csirkeke-link {
+    display: inline-block;
+    padding: 8px 14px;
+    background-color: #FFF1A8;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+    white-space: nowrap; /* ne törje meg a szöveget */
+}
+
+.csirkeke-link:hover {
+    background-color: #ffe97a;
+    transform: translateY(-2px);
+}
+.csirkeke-container {
+    display: flex;
+    justify-content: center; /* középre */
+    align-items: center;
+    gap: 12px; /* távolság a dobozok között */
+    flex-wrap: nowrap; /* NE törjön le */
+}
+
+/* mobilon mégis törjön, hogy ne csússzon ki */
+@media (max-width: 576px) {
+    .csirkeke-container {
+        flex-wrap: wrap;
+    }
+}
