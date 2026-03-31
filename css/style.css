@@ -1,4 +1,4 @@
-/* ====================== ALAP ====================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +14,6 @@ body {
     flex-direction: column;
 }
 
-/* ====================== FEJLÉC ====================== */
 .sziget-fejlec {
     background-color: #FFF1A8;
     height: 70px;
@@ -45,7 +44,6 @@ body {
     color: #555;
 }
 
-/* ====================== RECEPT ====================== */
 .recept-container {
     display: flex;
     justify-content: center;
@@ -68,14 +66,12 @@ body {
     font-weight: 700;
 }
 
-/* GRID */
 .recept-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 25px;
 }
 
-/* KÉP */
 .recept-image-box {
     border-radius: 20px;
     overflow: hidden;
@@ -86,7 +82,6 @@ body {
     justify-content: center;
 }
 
-/* DOBOZOK */
 .recept-box {
     background: #FFF1A8;
     border-radius: 15px;
@@ -105,7 +100,6 @@ body {
     margin-bottom: 10px;
 }
 
-/* LISTA */
 .recept-ingredients-list {
     list-style: none;
     padding: 0;
@@ -116,7 +110,6 @@ body {
     border-bottom: 1px solid #eee;
 }
 
-/* ELKÉSZÍTÉS */
 .recept-preparation-box {
     grid-column: span 2;
     background: white;
@@ -130,7 +123,6 @@ body {
     margin-top: 10px;
 }
 
-/* ====================== FOOTER ====================== */
 .sziget-lablec {
     background-color: #FFF1A8;
     border-radius: 20px 20px 0 0;
@@ -144,14 +136,12 @@ body {
     font-size: 0.9rem;
 }
 
-/* INPUT */
 .sziget-input {
     border-radius: 10px;
     padding: 6px;
     font-size: 0.85rem;
 }
 
-/* GOMB */
 .sziget-gomb {
     border-radius: 10px;
     background: black;
@@ -165,7 +155,6 @@ body {
     transform: translateY(-2px);
 }
 
-/* ====================== RESZPONZÍV ====================== */
 @media (max-width: 768px) {
 
     .recept-grid {
@@ -189,7 +178,6 @@ body {
     }
 }
 
-/* Fő konténer */
 #idopont-container {
     width: 400px;
     margin: 50px auto;
@@ -200,14 +188,12 @@ body {
     background-color: #f9f9f9;
 }
 
-/* Cím */
 #idopont-cim {
     text-align: center;
     font-size: 24px;
     margin-bottom: 20px;
 }
 
-/* Input blokkok */
 .idopont-mezo {
     margin-bottom: 15px;
 }
@@ -224,7 +210,6 @@ body {
     border: 1px solid #ccc;
 }
 
-/* Gomb */
 #idopont-gomb-div {
     text-align: center;
 }
@@ -246,15 +231,13 @@ body {
   background-color: #f3e2b3;
 }
 
-/* 🔥 GRID + KÖZÉPRE */
 .shop-row {
   display: grid;
-  grid-template-columns: repeat(3, 320px); /* fix 3 oszlop */
-  justify-content: center; /* középre */
+  grid-template-columns: repeat(3, 320px); 
+  justify-content: center; 
   gap: 25px;
 }
 
-/* KÁRTYA (nagyobb) */
 .shop-card {
   width: 100%;
   border: 2px solid orange;
@@ -264,19 +247,16 @@ body {
   box-shadow: 0 5px 12px rgba(0,0,0,0.15);
 }
 
-/* CAROUSEL NAGYOBB */
 .shop-carousel {
   height: 300px;
 }
 
 
-/* hover */
 .shop-card:hover {
   transform: scale(1.04);
   transition: 0.3s;
 }
 
-/* MOBIL */
 @media (max-width: 1000px) {
   .shop-row {
     grid-template-columns: repeat(2, 300px);
@@ -291,16 +271,15 @@ body {
 
 #main-layout-custom {
     display: flex;
-    justify-content: space-between; /* SZÉLEKRE HÚZ */
+    justify-content: space-between; 
     align-items: flex-start;
     gap: 60px;
-    padding: 40px 60px; /* ne margin, hanem padding */
+    padding: 40px 60px; 
     width: 100%;
 }
 
-/* BAL OLDAL */
 #services-container-custom {
-    width: 380px; /* nagyobb */
+    width: 380px; 
 }
 #services-custom .container {
     max-width: 900px;
@@ -370,7 +349,6 @@ body {
 }
 
 
-/* KÖZÉP */
 #booking-container-custom {
     width: 360px;
     border: 2px solid green;
@@ -378,7 +356,7 @@ body {
     border-radius: 15px;
     background: white;
     text-align: center;
-    margin: 0 auto; /* EZ KÖZÉPRE TESZI */
+    margin: 0 auto; 
 }
 
 
@@ -396,7 +374,6 @@ body {
     border-radius: 5px;
 }
 
-/* EMAIL IKON */
 .input-wrapper {
     position: relative;
 }
@@ -414,7 +391,6 @@ body {
     color: gray;
 }
 
-/* JOBB OLDAL */
 #map-container-custom {
     width: 420px;
 }
@@ -431,7 +407,7 @@ body {
 }
 
 #main-layout-custom {
-    min-height: 70vh; /* EZ A LÉNYEG */
+    min-height: 70vh; 
 }
 
 #services-container-custom {
@@ -444,10 +420,9 @@ body {
     font-weight: 600;
 }
 
-/* GRID */
 .services-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* 2 oszlop */
+    grid-template-columns: 1fr 1fr; 
     gap: 15px;
 }
 
@@ -464,32 +439,29 @@ body {
         max-width: 500px;
     }
 }
-/* KÁRTYA */
+
 .service-card {
     background: white;
-    padding: 20px; /* nagyobb */
+    padding: 20px; 
     border-radius: 16px;
     text-align: center;
     border: 1px solid #ddd;
     transition: 0.3s;
-    min-height: 140px; /* egységes méret */
+    min-height: 140px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-/* HOVER EFFECT */
 .service-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
-/* KIEMELT */
 .service-card.highlight {
     border: 2px solid green;
 }
 
-/* SZÖVEGEK */
 .service-card h5 {
     margin-bottom: 8px;
     font-size: 16px;
@@ -500,7 +472,6 @@ body {
     margin-bottom: 12px;
 }
 
-/* ÁR */
 .price {
     font-size: 18px;
     font-weight: bold;
@@ -517,11 +488,10 @@ body {
     font-weight: bold;
 }
 
-/* SECTION */
 .section-custom {
     padding: 60px 0;
 }
-/* CÍM */
+
 .section-title-custom h2 {
     font-weight: 600;
 }
@@ -544,7 +514,7 @@ body {
     margin: 0 auto;
 }
 
-/* STAT CARD */
+
 .stat-card-custom {
     background: #f1f1f1;
     padding: 25px;
@@ -564,7 +534,6 @@ body {
     font-weight: bold;
 }
 
-/* SERVICES ALATTI KÁRTYÁK FIX */
 .service-grid {
     margin-top: 50px;
 }
@@ -582,7 +551,7 @@ body {
 .stat-card-custom {
     background: white;
 }
-/* ===== RÓLUNK SZEKCIÓ ===== */
+
 
 .section-custom {
     padding: 80px 0;
@@ -609,7 +578,7 @@ body {
     font-weight: bold;
 }
 
-/* ===== SERVICES ===== */
+
 
 .section-custom {
     padding: 40px 0;
@@ -632,7 +601,7 @@ body {
     margin-bottom: 10px;
 }
 
-/* ===== CÍM DESIGN ===== */
+
 
 .section-title-custom h2 {
     font-weight: bold;
@@ -684,7 +653,6 @@ body {
 }
 
 
-    /* CÍM DOBOZ */
     .shop-title {
       display: block;
       width: fit-content;
@@ -703,7 +671,7 @@ body {
 }
 
 .shop-col {
-  margin: 15px; /* EZ ad távolságot */
+  margin: 15px; 
 }
 
 .csirkeke-link {
@@ -713,16 +681,16 @@ body {
     color: #333;
     font-weight: 500;
     text-decoration: none;
-    background-color: #FFF1A8; /* EZ A HÁTTÉR */
-    border-radius: 25px; /* lekerekítés */
+    background-color: #FFF1A8; 
+    border-radius: 25px; 
     transition: all 0.3s ease;
 }
 
-/* hover effekt */
+
 .csirkeke-link:hover {
     color: #000;
     transform: translateY(-3px);
-    background-color: #ffe97a; /* kicsit sötétebb hover */
+    background-color: #ffe97a; 
 }
 .csirkeke-link {
     display: inline-block;
@@ -733,7 +701,7 @@ body {
     color: #333;
     font-weight: 500;
     transition: 0.3s;
-    white-space: nowrap; /* ne törje meg a szöveget */
+    white-space: nowrap; 
 }
 
 .csirkeke-link:hover {
@@ -742,13 +710,12 @@ body {
 }
 .csirkeke-container {
     display: flex;
-    justify-content: center; /* középre */
+    justify-content: center; 
     align-items: center;
-    gap: 12px; /* távolság a dobozok között */
-    flex-wrap: nowrap; /* NE törjön le */
+    gap: 12px; 
+    flex-wrap: nowrap; 
 }
 
-/* mobilon mégis törjön, hogy ne csússzon ki */
 @media (max-width: 576px) {
     .csirkeke-container {
         flex-wrap: wrap;
@@ -758,7 +725,6 @@ body {
   background-color: #d2c1ad;
 }
 
-/* HERO */
 .hero-sziget {
   background: #e6d28f;
   padding: 80px 0;
@@ -780,7 +746,6 @@ body {
   padding: 10px 25px;
 }
 
-/* SZOLGÁLTATÁS */
 .szolgaltatas-szekcio {
   padding: 60px 0;
 }
@@ -796,18 +761,15 @@ body {
   transform: scale(1.05);
 }
 
-/* BIZALOM */
 .bizalom-szekcio {
   background: #e6d28f;
   padding: 50px;
 }
 
-/* RÓLAM */
 .rolam-szekcio {
   padding: 60px 0;
 }
 
-/* SHOP */
 .shop-kartya {
   transition: 0.3s;
 }
