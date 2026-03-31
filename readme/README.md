@@ -64,9 +64,9 @@ A projekt célja egy modern, esztétikus és könnyen használható weboldal lé
 ---
 
 ## 👨‍💻 Készítette
-Raffai Dániel Zsolt
-Pál Leon (Csoportvezető)
-Mohácsi Márk Csaba
+- Pál Leon (Csoportvezető)
+- Raffai Dániel Zsolt
+- Mohácsi Márk Csaba
 
 ---
 
