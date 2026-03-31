@@ -669,6 +669,7 @@ body {
 
     .shop-col {
       width: 300px;
+
     }
 
     .shop-card {
@@ -680,9 +681,12 @@ body {
     }
 
     .shop-img {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
+
+     width: 100%;
+  height: 450px;      /* itt növeled a magasságot */
+  object-fit: cover;  /* kitölti a keretet torzulás nélkül */
+  object-position: center; /* középre igazít */
+  cursor: pointer;
     }
 
     /* CÍM DOBOZ */
@@ -707,6 +711,56 @@ body {
   margin: 15px; /* EZ ad távolságot */
 }
 
+<<<<<<< HEAD
+.csirkeke-link {
+    position: relative;
+    display: inline-block;
+    padding: 4px 8px;
+    color: #333;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: #FFF1A8; /* EZ A HÁTTÉR */
+    border-radius: 25px; /* lekerekítés */
+    transition: all 0.3s ease;
+}
+
+/* hover effekt */
+.csirkeke-link:hover {
+    color: #000;
+    transform: translateY(-3px);
+    background-color: #ffe97a; /* kicsit sötétebb hover */
+}
+.csirkeke-link {
+    display: inline-block;
+    padding: 8px 14px;
+    background-color: #FFF1A8;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+    white-space: nowrap; /* ne törje meg a szöveget */
+}
+
+.csirkeke-link:hover {
+    background-color: #ffe97a;
+    transform: translateY(-2px);
+}
+.csirkeke-container {
+    display: flex;
+    justify-content: center; /* középre */
+    align-items: center;
+    gap: 12px; /* távolság a dobozok között */
+    flex-wrap: nowrap; /* NE törjön le */
+}
+
+/* mobilon mégis törjön, hogy ne csússzon ki */
+@media (max-width: 576px) {
+    .csirkeke-container {
+        flex-wrap: wrap;
+    }
+}
+=======
 body {
   background-color: #d2c1ad;
 }
@@ -768,3 +822,4 @@ body {
 .shop-kartya:hover {
   transform: scale(1.05);
 }
+>>>>>>> 5bbf6f6c1a88b33587ccc7abb075f0443423c4fc
