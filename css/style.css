@@ -711,7 +711,6 @@ body {
   margin: 15px; /* EZ ad távolságot */
 }
 
-<<<<<<< HEAD
 .csirkeke-link {
     position: relative;
     display: inline-block;
@@ -760,7 +759,6 @@ body {
         flex-wrap: wrap;
     }
 }
-=======
 body {
   background-color: #d2c1ad;
 }
@@ -822,4 +820,3 @@ body {
 .shop-kartya:hover {
   transform: scale(1.05);
 }
->>>>>>> 5bbf6f6c1a88b33587ccc7abb075f0443423c4fc
