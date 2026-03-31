@@ -269,13 +269,6 @@ body {
   height: 300px;
 }
 
-/* KÉP NAGYOBB */
-.shop-img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 10px;
-}
 
 /* hover */
 .shop-card:hover {
@@ -680,14 +673,16 @@ body {
       background: white;
     }
 
-    .shop-img {
+.shop-kartya {
+  background: #fff;
+}
 
-     width: 100%;
-  height: 450px;      /* itt növeled a magasságot */
-  object-fit: cover;  /* kitölti a keretet torzulás nélkül */
-  object-position: center; /* középre igazít */
-  cursor: pointer;
-    }
+.shop-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 
     /* CÍM DOBOZ */
     .shop-title {
@@ -819,4 +814,17 @@ body {
 
 .shop-kartya:hover {
   transform: scale(1.05);
+}
+.shop-kartya {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.shop-kartya img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
